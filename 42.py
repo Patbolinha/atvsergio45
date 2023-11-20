@@ -1,25 +1,8 @@
-positivos = 0
-resposta = input("Telefonou para a vítima? (S ou N): ")
-if resposta.upper() == "S":
-    positivos += 1
-resposta = input("Esteve no local do crime? (S ou N): ")
-if resposta.upper() == "S":
-    positivos += 1
-resposta = input("Mora perto da vítima? (S ou N): ")
-if resposta.upper() == "S":
-    positivos += 1
-resposta = input("Devia para a vítima? (S ou N): ")
-if resposta.upper() == "S":
-    positivos += 1
-resposta = input("Já trabalhou com a vítima? (S ou N): ")
-if resposta.upper() == "S":
-    positivos += 1
+n1=str(input("Voce ligou para a vitima? sigite s ou n"))
+n2=str(input("esteve no local do crime? sigite s ou n"))
+n3=str(input("mora perto da vitima? sigite s ou n"))
+n4=str(input("devia para vitima? sigite s ou n"))
+n5=str(input("ja trabalhou para a vitima? sigite s ou n"))
 
-if positivos < 2:
-    print("Inocente")
-elif positivos == 2:
-    print("Suspeita")
-elif positivos < 5:
-    print("Cúmplice")
-else:
-    print("Assassino")
+if n1=="s" and n2=="s" and n3=="s":
+    print("voce é suspeito")

@@ -1,30 +1,11 @@
-numero1 = float(input("Digite um número: "))
-numero2 = float(input("Digite outro número: "))
-op = input("Digite qual operação (+, -, * ou /) deseja realizar: ")
-if op == "+":
-    resultado = numero1 + numero2
-elif op == "-":
-    resultado = numero1 - numero2
-elif op == "*":
-    resultado = numero1 * numero2
-elif op == "/":
-    resultado = numero1 / numero2
-else:
-    resultado = 0
-
-print("\nO resultado é: ")
-
-if (resultado // 1) % 2 == 0:
-    print("Par")
-else:
-    print("Ímpar")
-
-if resultado >= 0:
-    print("Positivo")
-else:
-    print("Negativo")
-
-if resultado % 1 == 0:
-    print("Inteiro")
-else:
-    print("Decimal")
+n1=float(input("digite o primeiro n"))
+n2=float(input("digite o segundo n"))
+conta=int(input("digite 1 para soma 2 para subtração 3 para multilpicaçao e 4 para divisão"))
+if conta==1 and n1+n2>0:
+    print("o resultado é: {} e é positivo".format(n1+n2))
+elif conta==2:
+    print("o resultado é: {}".format(n1-n2))
+elif conta==3:
+    print("o resultado é: {}".format(n1*n2))
+elif conta==4:
+    print("o resultado é: {}".format(n1/n2))
