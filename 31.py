@@ -13,5 +13,5 @@ if dgt==6:
     print('dia {} é sexta'.format(dgt))
 if dgt==7:
     print('dia {} é sabado'.format(dgt))
-else:
-    print('numero invalido')
+elif dgt != 1 and 2 and 3 and 4 and 5 and 6 and 7:
+    print("numero invalido")

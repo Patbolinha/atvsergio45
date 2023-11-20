@@ -9,9 +9,9 @@ else:
         print("Delta menor que 0. Não há raízes reais.")
     elif delta == 0:
         raiz = (-b) / (2 * a)
-        print(f"Delta é zero. A raíz é {raiz}")
-    else:
+        print("Delta é zero. A raíz é ",raiz)
+    elif delta > 0:
         raiz1 = (-b + (delta ** (1 / 2))) / (2 * a)
         raiz2 = (-b - (delta ** (1 / 2))) / (2 * a)
-        print('f"Delta maior que zero. A raíz 1 é {raiz1}, e a raiz 2 é {raiz2}"')
+        print(f"Delta maior que zero. A raíz 1 é {raiz1}, e a raiz 2 é {raiz2}")
             
